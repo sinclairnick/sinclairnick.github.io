@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="vue">
+        <header>
+            <div id="head">
+
+                <div id="headshot">
+
+                </div>
+                <div id="description" class="p-10">
+                    <div class="title">
+                        <h1 class="text-center heading">Nick Sinclair</h1>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="paragraph">
+                        <h4>
+                            Victoria University of Wellington Alumnus &#11049 Bachelor of Science &#11049 Psychology &#11049 Philosophy &#11049 Self-taught Full-Stack Developer &#11049 JavaScript &#11049 nodeJS &#11049 VueJS &#11049 Sass &#11049 Electron &#11049 HTML &#11049 CSS
+                        </h4>
+                    </div>
+                </div>
+                <div id="nav">
+                    <div class="nav-item">
+                        <a href="#">about</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">projects</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">github</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <div id="about" class="section">
+            <h1>REWRITE WITH GLOBAL AUDIENCE IN MIND:</h1>
+            <p class="para-padding">
+                After graduating from Mt Albert Grammar School in Auckland, I moved to Wellington to pursue a science degree majoring in
+                Psychology and Physics. Despite having a strong interest in physics and mathematics, and studying them at
+                high school, I decided to change my second major to Computer Science. The mode of thinking involved in Computer
+                Science was very interesting to me, but I found myself learning more through free online resources than through
+                the university curriculum. This lead me to change my courses once again, and do a mixture of biology and
+                philosophy, which grounded the psychology in hard science, and imbued me with an understanding of logic,
+                both in terms of how people
+                <i>do</i> think and how people
+                <i>should</i> think.
+                <br>
+                <br> Graduating from university in 2018 meant I had time to learn programming and computer science myself, which
+                is what I did. Resuming my programming education at the start of 2018, I have since learned many web technologies
+                and applied this knowledge to various projects.
+            </p>
+            <div id="timeline">
+                <div class="tech-logo python" :class="{selected: selectedTech === 'python'}" v-on:mouseover="selectedTech = 'python' ">
+
+                </div>
+                <div class="tech-logo javascript" :class="{selected: selectedTech === 'javascript'}" v-on:mouseover="selectedTech = 'javascript' ">
+
+                </div>
+                <div class="tech-logo html" :class="{selected: selectedTech === 'html'}" v-on:mouseover="selectedTech = 'html' ">
+
+                </div>
+                <div class="tech-logo css" :class="{selected: selectedTech === 'css'}" v-on:mouseover="selectedTech = 'css' ">
+
+                </div>
+                <div class="tech-logo node" :class="{selected: selectedTech === 'node'}" v-on:mouseover="selectedTech = 'node' ">
+
+                </div>
+                <div class="tech-logo electron" :class="{selected: selectedTech === 'electron'}" v-on:mouseover="selectedTech = 'electron' ">
+
+                </div>
+                <div class="tech-logo vue" :class="{selected: selectedTech === 'vue'}" v-on:mouseover="selectedTech = 'vue' ">
+
+                </div>
+                <div class="tech-logo sass" :class="{selected: selectedTech === 'sass'}" v-on:mouseover="selectedTech = 'sass' ">
+
+                </div>
+            </div>
+            <div id="info-box">
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'python' " class="info">
+                        <p>
+                            Other than basic Java which I learned during University, Python was the first language I was competent using. I found Python
+                            to be more beginner--friendly than Java, as concepts such as type checking and scope declarations
+                            were not required. This reignited my passion for coding and allowed me to learn the primary principles
+                            of coding before focussing on more complex paradigms and techniques.
+                            <br>
+                            <br> While Python was enjoyable to use, I wanted to be able to make web apps and web sites, which
+                            meant I would need to learn JavaScript.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'javascript' " class="info">
+                        <p>
+                            Like many, I initially found JavaScript to be more convoluted and illogical than, say, Python. However, as I gradually came
+                            to terms with the philosophy of the language, and became familiar with the inner workings of
+                            JavaScript, my confusion and frustration would later turn into appreciation for the nuances of
+                            this charismatic language.
+                            <br>
+                            <br> At this point I would need to learn HTML and CSS to utilise JavaScript, the language of the
+                            web.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'html' " class="info">
+                        <p>
+                            I was familiar with HTML after making websites during university for an elective paper I was enrolled in and re-familiarizing
+                            myself with HTML was relatively easy. But until I had mastered HTML I was determined to continue
+                            optimizing my use of HTML5 and the available API, aiming to keep HTML as simple as possible and
+                            to employ best practices to remedy any bad habits I may have acquired.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'css' " class="info">
+                        <p>
+                            Like HTML, I was already familiar with CSS. CSS potentially has more room for improvement and thus room for error, compared
+                            to HTML. This meant learning how to properly use things like flex-box, grid, psuedo-elements
+                            and animations was the next step towards developin my front-end skills.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'node' " class="info">
+                        <p>
+                            Once comfortable with creating stylistic, but ultimately static web pages, using JS, CSS and HTML, I was interested in pursuing
+                            Node.js as the next step in my coding education. Like vanilla JS, I found Node.js very interesting, after understanding the internals like the interaction between JS and C++.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'electron' " class="info">
+                        <p>
+                            Electron provided a way to build a desktop app with the languages, libraries and frameworks I had already learned. I jumped
+                            into Electron shortly after Node, as a way to practice using Node, and to make something that
+                            was not possible purely within a browser.
+                            <br>
+                            <sub>
+                                (See: <a href="#">Projects > juke</a>)
+                            </sub>
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'vue' " class="info">
+                        <p>
+                            To bring my front-end skills to an acceptable level I needed to learn a JavaScript view framework.
+                            After initially understanding the basics of React, I looked at Vue.js for comparison, and found it suited my needs while also being faster to get up and running than React. I learned Vue alongside the creation of <a href="#">juke</a>.
+                            <br>
+                            <br>
+                            While I am familiar with and more inclined to use Vue at the moment, I will be looking into using React in the future.
+                        </p>
+                    </div>
+                </transition>
+                <transition name="fade">
+                    <div v-if=" selectedTech === 'sass' " class="info">
+                        <p>
+                            Sass is the latest technology I have invested time into, and was used to make this web page. Sass (SCSS syntax) took a short time to learn, but has been a huge time-saver which I wish I had picked up earlier.
+                        </p>
+                    </div>
+                </transition>
+
+            </div>
+        </div>
+        <div id="projects" class="para-padding section">
+            <h1 class="heading">Projects</h1>
+        </div>
+        <div id="github" class="para-padding section">
+
+        </div>
+        <div id="contact" class="para-padding section">
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

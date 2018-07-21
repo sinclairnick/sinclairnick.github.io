@@ -1,0 +1,174 @@
+#about {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1E1E67), to(rgba(30, 30, 103, 0)));
+  background: linear-gradient(#1E1E67, rgba(30, 30, 103, 0));
+}
+
+#timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+  width: 100vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tech-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px ridge #575757;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.tech-logo:after {
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  margin-top: 120px;
+}
+
+@media (min-width: 1120px) {
+  .selected:before {
+    position: absolute;
+    content: '';
+    margin-top: 149px;
+    height: 0;
+    margin-left: 40px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(37, 37, 37, 0.356);
+  }
+}
+
+#info-box {
+  background: rgba(37, 37, 37, 0.356);
+  min-height: 250px;
+  margin: 20px 0;
+  color: #b6b6b6;
+  overflow: auto;
+}
+
+@media (max-width: 1120px) {
+  #info-box {
+    display: none;
+  }
+}
+
+#info-box .fade-enter-active, #info-box .fade-leave-active {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+#info-box .fade-enter,
+#info-box .fade-leave-to {
+  opacity: 0;
+}
+
+#info-box .info {
+  padding: 20px;
+  position: absolute;
+  min-height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media (max-width: 1120px) {
+  #info-box .info {
+    display: none;
+  }
+}
+
+.python {
+  background: url("../img/python.jpeg") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.python:after {
+  content: 'Python';
+}
+
+.javascript {
+  background: url("../img/javascript.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.javascript:after {
+  content: 'JavaScript';
+}
+
+.html {
+  background: url("../img/html.jpeg") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.html:after {
+  content: 'HTML5';
+}
+
+.css {
+  background: url("../img/css.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.css:after {
+  content: 'CSS3';
+}
+
+.node {
+  background: url("../img/nodejs.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.node:after {
+  content: 'Node';
+}
+
+.electron {
+  background: url("../img/electron.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.electron:after {
+  content: 'Electron';
+}
+
+.vue {
+  background: url("../img/vuejs.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.vue:after {
+  content: 'Vue.js';
+}
+
+.sass {
+  background: url("../img/sass.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.sass:after {
+  content: 'Sass';
+}
+/*# sourceMappingURL=about.css.map */
