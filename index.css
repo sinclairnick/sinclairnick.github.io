@@ -1,8 +1,8 @@
 /* importing other css files */
-@import url("scss/header.css");
-@import url("scss/utility.css");
-@import url("scss/general.css");
-@import url("scss/about.css");
+@import url("css/header.css");
+@import url("css/utility.css");
+@import url("css/general.css");
+@import url("css/about.css");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
