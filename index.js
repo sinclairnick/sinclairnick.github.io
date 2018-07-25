@@ -29,8 +29,6 @@ let interval = setInterval(() => {
         nav.classList.value = '';
     }
 
-    // if (window.scrollY >= (head.clientHeight / 2 + head.offsetTop))
-
 }, 10)
 //#endregion
 
