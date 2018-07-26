@@ -56,6 +56,10 @@
   }
 }
 
+#projects a {
+  text-decoration: none;
+}
+
 #projects #juke {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -72,6 +76,12 @@
   width: 100px;
   height: 100px;
   margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  #projects #juke .left .logo {
+    display: none;
+  }
 }
 
 #projects #juke .left .logo img {
@@ -105,4 +115,21 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+#projects #wcm {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects #wcm .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#projects #wcm .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }

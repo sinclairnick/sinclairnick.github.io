@@ -232,8 +232,6 @@ header {
 
 body {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-  -webkit-animation: Gradient 15s ease infinite;
-          animation: Gradient 15s ease infinite;
   color: white;
 }
 
@@ -514,6 +512,10 @@ img {
   }
 }
 
+#projects a {
+  text-decoration: none;
+}
+
 #projects #juke {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -530,6 +532,12 @@ img {
   width: 100px;
   height: 100px;
   margin-top: 50px;
+}
+
+@media (max-width: 500px) {
+  #projects #juke .left .logo {
+    display: none;
+  }
 }
 
 #projects #juke .left .logo img {
@@ -563,6 +571,61 @@ img {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+#projects #wcm {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#projects #wcm .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#projects #wcm .right {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.493);
+          box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.493);
+  background: linear-gradient(45deg, #23A6D5, #23D5AB);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .contact {
+  min-width: 300px;
+}
+
+footer .contact .link {
+  display: block;
+  padding: 5px;
+}
+
+footer .contact .link a {
+  text-decoration: none;
+  color: #272727;
+}
+
+footer .contact .link a i {
+  margin-right: 20px;
+}
+
+footer .name {
+  padding-bottom: 30px;
 }
 
 * {
