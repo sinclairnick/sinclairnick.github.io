@@ -85,15 +85,11 @@ header {
 
 #head #nav {
   display: none;
-  visibility: hidden;
-  opacity: 0;
   margin-left: 100px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 40%;
   height: 100%;
-  -webkit-transition: opacity 0.3s ease 0.3s, margin-top 0.3s ease 0.3s;
-  transition: opacity 0.3s ease 0.3s, margin-top 0.3s ease 0.3s;
 }
 
 #head #nav a {
@@ -190,11 +186,8 @@ header {
 
 @media (min-width: 701px) {
   .scrolling#nav {
-    visibility: visible !important;
     display: -webkit-inline-box !important;
     display: -ms-inline-flexbox !important;
     display: inline-flex !important;
-    opacity: 1 !important;
-    margin-top: 0 !important;
   }
 }

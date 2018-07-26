@@ -1,6 +1,8 @@
 window.onload = function () {
 
     window.sr = ScrollReveal({distance: '-50px'});
+
+
     
     //#region get elms
     let els = {
@@ -18,8 +20,9 @@ window.onload = function () {
     
     //#region scroll change
     let interval = setInterval(() => {
+
         
-        if (window.scrollY >= (head.clientHeight / 2 + head.offsetTop)) {
+        if (window.scrollY >= (window.innerHeight / 2)) {
             head.classList.value = 'scrolling';
             headshot.classList.value = 'scrolling';
             description.classList.value = 'scrolling';
