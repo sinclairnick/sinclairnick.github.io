@@ -47,7 +47,8 @@ window.onload = function () {
     head.style.opacity = 1;
     
     sr.reveal('#timeline');
-    sr.reveal('#juke > *');
+    sr.reveal('#projects .left', {origin: 'left', distance: '100px'});
+    sr.reveal('#projects .right', {origin: 'right', distance: '100px'})
     
     
 }

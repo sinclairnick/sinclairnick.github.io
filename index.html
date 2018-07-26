@@ -23,7 +23,9 @@
                     <br>
                     <div class="paragraph">
                         <h4>
-                            Victoria University of Wellington Alumnus &#11049 Bachelor of Science &#11049 Psychology &#11049 Philosophy &#11049 Self-taught Full-Stack Developer &#11049 JavaScript &#11049 nodeJS &#11049 VueJS &#11049 Sass &#11049 Electron &#11049 HTML &#11049 CSS
+                            Victoria University of Wellington Alumnus &#11049 Bachelor of Science &#11049 Psychology &#11049 Philosophy &#11049 Self-taught
+                            Full-Stack Developer &#11049 JavaScript &#11049 nodeJS &#11049 VueJS &#11049 Sass &#11049 Electron
+                            &#11049 HTML &#11049 CSS
                         </h4>
                     </div>
                 </div>
@@ -46,13 +48,13 @@
         </header>
         <div id="about" class="section">
             <p class="para-padding">
-                After graduating from high school in Auckland, New Zealand I moved away from home to pursue a science degree double majoring in
-                Psychology and Physics, initially. Despite having a strong interest in physics and mathematics, and studying them at
-                high school, I decided to change my second major to Computer Science in the first few weeks. I found the way of thinking in Computer Science 
-                fascinating, but I found myself learning more through free online resources than through
-                the university curriculum. This lead me to change my courses once again, and do a mixture of biology and
-                philosophy, which grounded the psychology in hard science, and imbued me with an understanding of logic,
-                both in terms of how people
+                After graduating from high school in Auckland, New Zealand I moved away from home to pursue a science degree double majoring
+                in Psychology and Physics, initially. Despite having a strong interest in physics and mathematics, and studying
+                them at high school, I decided to change my second major to Computer Science in the first few weeks. I found
+                the way of thinking in Computer Science fascinating, but I found myself learning more through free online
+                resources than through the university curriculum. This lead me to change my courses once again, and do a
+                mixture of biology and philosophy, which grounded the psychology in hard science, and imbued me with an understanding
+                of logic, both in terms of how people
                 <i>do</i> think and how people
                 <i>should</i> think.
                 <br>
@@ -136,7 +138,8 @@
                     <div v-if=" selectedTech === 'node' " class="info">
                         <p>
                             Once comfortable with creating stylistic, but ultimately static web pages, using JS, CSS and HTML, I was interested in pursuing
-                            Node.js as the next step in my coding education. Like vanilla JS, I found Node.js very interesting, after understanding the internals like the interaction between JS and C++.
+                            Node.js as the next step in my coding education. Like vanilla JS, I found Node.js very interesting,
+                            after understanding the internals like the interaction between JS and C++.
                         </p>
                     </div>
                 </transition>
@@ -148,7 +151,8 @@
                             was not possible purely within a browser.
                             <br>
                             <sub>
-                                (See: <a href="#juke">juke</a>)
+                                (See:
+                                <a href="#juke">juke</a>)
                             </sub>
                         </p>
                     </div>
@@ -156,18 +160,21 @@
                 <transition name="fade">
                     <div v-if=" selectedTech === 'vue' " class="info">
                         <p>
-                            To bring my front-end skills to an acceptable level I needed to learn a JavaScript view framework.
-                            After initially understanding the basics of React, I looked at Vue.js for comparison, and found it suited my needs while also being faster to get up and running than React. I learned Vue alongside the creation of <a href="#juke">juke</a>.
+                            To bring my front-end skills to an acceptable level I needed to learn a JavaScript view framework. After initially understanding
+                            the basics of React, I looked at Vue.js for comparison, and found it suited my needs while also
+                            being faster to get up and running than React. I learned Vue alongside the creation of
+                            <a href="#juke">juke</a>.
                             <br>
-                            <br>
-                            While I am familiar with and more inclined to use Vue at the moment, I will be looking into using React in the future.
+                            <br> While I am familiar with and more inclined to use Vue at the moment, I will be looking into
+                            using React in the future.
                         </p>
                     </div>
                 </transition>
                 <transition name="fade">
                     <div v-if=" selectedTech === 'sass' " class="info">
                         <p>
-                            Sass is the latest technology I have invested time into, and was used to make this web page. Sass (SCSS syntax) took a short time to learn, but has been a huge time-saver which I wish I had picked up earlier.
+                            Sass is the latest technology I have invested time into, and was used to make this web page. Sass (SCSS syntax) took a short
+                            time to learn, but has been a huge time-saver which I wish I had picked up earlier.
                         </p>
                     </div>
                 </transition>
@@ -175,12 +182,51 @@
         </div>
         <div id="projects" class="section">
             <h1 class="para-padding heading">Projects</h1>
-            <div id="juke">
-                <h2 class="title heading">
-                    juke
-                </h2>
-                <p>A client for streaming and downloading music torrents</p>
-                
+            <div id="juke" class="project block">
+                    <div class="left side">
+                        <div class="logo">
+                            <img src="img/juke/icon.png">
+                        </div>
+                        <div class="description">
+                            <h2 class="title heading">
+                                juke
+                            </h2>
+                            <p>A client for streaming and downloading music torrents</p>
+                            <div class="made-with">
+                                <br>
+                                <p>
+                                    Created using:
+                                    <br>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JS</li>
+                                        <li>Node</li>
+                                        <li>Electron</li>
+                                        <li>Vue</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right side">
+                        <div id="homescreen">
+                            <img src="img/juke/home-macbook.png">
+                        </div>
+                    </div>
+            </div>
+            <div id="magnetic-music" class="project block">
+                    <div class="left side">
+                        <img src="img/magnetic/magnetic-music.png">
+                    </div>
+                    <div class="right side">
+                        <div class="description">
+                            <h2 class="title heading">
+                                magnetic-music
+                            </h2>
+                            <p>An npm module used to search for music torrents (used in juke)</p>
+                        </div>
+                    </div>
             </div>
         </div>
         <div id="github" class="para-padding section">

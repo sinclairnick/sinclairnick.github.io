@@ -10,10 +10,6 @@ p {
   font-size: 1.3rem;
 }
 
-hr {
-  width: 80%;
-}
-
 i {
   color: #ececec;
 }
@@ -22,4 +18,11 @@ i {
   font-size: 3rem;
   margin-top: -90px;
   padding-top: 120px;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
