@@ -1,0 +1,13 @@
+#projects {
+  padding: 40px;
+}
+
+#projects #juke .title {
+  color: black;
+  text-shadow: 0 0 5px white;
+  opacity: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}

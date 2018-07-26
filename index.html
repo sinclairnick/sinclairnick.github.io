@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Nick Sinclair</title>
-    <link href="index.css" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,10 +29,10 @@
                 </div>
                 <div id="nav">
                     <div class="nav-item">
-                        <a href="#">about</a>
+                        <a href="#about">about</a>
                     </div>
                     <div class="nav-item">
-                        <a href="#">projects</a>
+                        <a href="#projects">projects</a>
                     </div>
                     <div class="nav-item">
                         <a href="#">github</a>
@@ -148,7 +148,7 @@
                             was not possible purely within a browser.
                             <br>
                             <sub>
-                                (See: <a href="#">juke</a>)
+                                (See: <a href="#juke">juke</a>)
                             </sub>
                         </p>
                     </div>
@@ -157,7 +157,7 @@
                     <div v-if=" selectedTech === 'vue' " class="info">
                         <p>
                             To bring my front-end skills to an acceptable level I needed to learn a JavaScript view framework.
-                            After initially understanding the basics of React, I looked at Vue.js for comparison, and found it suited my needs while also being faster to get up and running than React. I learned Vue alongside the creation of <a href="#">juke</a>.
+                            After initially understanding the basics of React, I looked at Vue.js for comparison, and found it suited my needs while also being faster to get up and running than React. I learned Vue alongside the creation of <a href="#juke">juke</a>.
                             <br>
                             <br>
                             While I am familiar with and more inclined to use Vue at the moment, I will be looking into using React in the future.
@@ -171,11 +171,17 @@
                         </p>
                     </div>
                 </transition>
-
             </div>
         </div>
-        <div id="projects" class="para-padding section">
-            <h1 class="heading">Projects</h1>
+        <div id="projects" class="section">
+            <h1 class="para-padding heading">Projects</h1>
+            <div id="juke">
+                <h2 class="title heading">
+                    juke
+                </h2>
+                <p>A client for streaming and downloading music torrents</p>
+                
+            </div>
         </div>
         <div id="github" class="para-padding section">
 
@@ -186,6 +192,7 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="index.js"></script>
 </body>
 
