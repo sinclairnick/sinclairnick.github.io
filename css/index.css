@@ -260,7 +260,7 @@ img {
   padding-top: 90px;
 }
 
-#timeline {
+#about #timeline {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[8];
@@ -272,7 +272,7 @@ img {
 }
 
 @media (max-width: 1120px) and (min-width: 581px) {
-  #timeline {
+  #about #timeline {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: (1fr)[2];
@@ -281,7 +281,7 @@ img {
 }
 
 @media (max-width: 580px) {
-  #timeline {
+  #about #timeline {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[4];
@@ -289,7 +289,87 @@ img {
   }
 }
 
-.tech-logo {
+#about #timeline .python {
+  background: url("../img/logos/python.jpeg") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .python:after {
+  content: 'Python';
+}
+
+#about #timeline .javascript {
+  background: url("../img/logos/javascript.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .javascript:after {
+  content: 'JavaScript';
+}
+
+#about #timeline .html {
+  background: url("../img/logos/html.jpeg") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .html:after {
+  content: 'HTML5';
+}
+
+#about #timeline .css {
+  background: url("../img/logos/css.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .css:after {
+  content: 'CSS3';
+}
+
+#about #timeline .node {
+  background: url("../img/logos/nodejs.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .node:after {
+  content: 'Node';
+}
+
+#about #timeline .electron {
+  background: url("../img/logos/electron.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .electron:after {
+  content: 'Electron';
+}
+
+#about #timeline .vue {
+  background: url("../img/logos/vuejs.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .vue:after {
+  content: 'Vue.js';
+}
+
+#about #timeline .sass {
+  background: url("../img/logos/sass.png") white;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#about #timeline .sass:after {
+  content: 'Sass';
+}
+
+#about .tech-logo {
   width: 100px;
   height: 100px;
   -ms-grid-column-align: center;
@@ -302,7 +382,7 @@ img {
   margin-bottom: 40px;
 }
 
-.tech-logo:after {
+#about .tech-logo:after {
   text-align: center;
   width: 100px;
   position: absolute;
@@ -310,7 +390,7 @@ img {
 }
 
 @media (min-width: 1120px) {
-  .selected:before {
+  #about .selected:before {
     position: absolute;
     content: '';
     margin-top: 149px;
@@ -322,7 +402,7 @@ img {
   }
 }
 
-#info-box {
+#about #info-box {
   background: rgba(37, 37, 37, 0.356);
   min-height: 250px;
   margin: 20px 0;
@@ -331,22 +411,23 @@ img {
 }
 
 @media (max-width: 1120px) {
-  #info-box {
+  #about #info-box {
     display: none;
   }
 }
 
-#info-box .fade-enter-active, #info-box .fade-leave-active {
+#about #info-box .fade-enter-active,
+#about #info-box .fade-leave-active {
   -webkit-transition: opacity .2s;
   transition: opacity .2s;
 }
 
-#info-box .fade-enter,
-#info-box .fade-leave-to {
+#about #info-box .fade-enter,
+#about #info-box .fade-leave-to {
   opacity: 0;
 }
 
-#info-box .info {
+#about #info-box .info {
   padding: 20px;
   position: absolute;
   min-height: 200px;
@@ -361,94 +442,34 @@ img {
       align-content: center;
 }
 
-#info-box .info a {
+#about #info-box .info a {
   color: white !important;
 }
 
 @media (max-width: 1120px) {
-  #info-box .info {
+  #about #info-box .info {
     display: none;
   }
 }
 
-.python {
-  background: url("../img/logos/python.jpeg") white;
-  background-size: cover;
-  background-position: 50% 50%;
+#about #objectives {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.python:after {
-  content: 'Python';
+@media (max-width: 1120px) {
+  #about #objectives {
+    display: none;
+  }
 }
 
-.javascript {
-  background: url("../img/logos/javascript.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.javascript:after {
-  content: 'JavaScript';
-}
-
-.html {
-  background: url("../img/logos/html.jpeg") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.html:after {
-  content: 'HTML5';
-}
-
-.css {
-  background: url("../img/logos/css.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.css:after {
-  content: 'CSS3';
-}
-
-.node {
-  background: url("../img/logos/nodejs.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.node:after {
-  content: 'Node';
-}
-
-.electron {
-  background: url("../img/logos/electron.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.electron:after {
-  content: 'Electron';
-}
-
-.vue {
-  background: url("../img/logos/vuejs.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.vue:after {
-  content: 'Vue.js';
-}
-
-.sass {
-  background: url("../img/logos/sass.png") white;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.sass:after {
-  content: 'Sass';
+#about #objectives h4 {
+  text-decoration: underline;
 }
 
 #projects {
