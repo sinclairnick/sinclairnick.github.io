@@ -28,3 +28,11 @@ img {
       -ms-user-select: none;
           user-select: none;
 }
+
+a {
+  color: white !important;
+}
+
+a:visited {
+  color: white !important;
+}

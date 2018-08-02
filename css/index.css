@@ -254,6 +254,14 @@ img {
           user-select: none;
 }
 
+a {
+  color: white !important;
+}
+
+a:visited {
+  color: white !important;
+}
+
 #about {
   background: -webkit-gradient(linear, left top, left bottom, from(#1E1E67), to(rgba(30, 30, 103, 0)));
   background: linear-gradient(#1E1E67, rgba(30, 30, 103, 0));
@@ -442,10 +450,6 @@ img {
       align-content: center;
 }
 
-#about #info-box .info a {
-  color: white !important;
-}
-
 @media (max-width: 1120px) {
   #about #info-box .info {
     display: none;
@@ -466,10 +470,6 @@ img {
   #about #objectives {
     display: none;
   }
-}
-
-#about #objectives h4 {
-  text-decoration: underline;
 }
 
 #projects {

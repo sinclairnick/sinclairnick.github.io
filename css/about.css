@@ -186,10 +186,6 @@
       align-content: center;
 }
 
-#about #info-box .info a {
-  color: white !important;
-}
-
 @media (max-width: 1120px) {
   #about #info-box .info {
     display: none;
@@ -210,8 +206,4 @@
   #about #objectives {
     display: none;
   }
-}
-
-#about #objectives h4 {
-  text-decoration: underline;
 }
