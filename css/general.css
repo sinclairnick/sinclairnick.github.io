@@ -31,8 +31,14 @@ img {
 
 a {
   color: white !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a:visited {
   color: white !important;
+}
+
+a:hover {
+  opacity: 0.8;
 }

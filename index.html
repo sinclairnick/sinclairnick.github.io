@@ -19,7 +19,7 @@
                 </div>
                 <div id="description" class="p-10">
                     <div class="title">
-                        <h1 class="text-center heading">Nick Sinclair</h1>
+                        <h1 class="text-center heading">Nick S<a href="https://www.linkedin.com/in/nick-sinclair-94b7b1160/" target="_blank"><i class="fab fa-linkedin"></i></a>clair</h1>
                     </div>
                     <hr>
                     <br>
@@ -49,12 +49,18 @@
             </div>
         </header>
         <div id="about" class="section">
-                <h1 class="para-padding heading text-center">About Me</h1>
+            <h1 class="para-padding heading text-center">About Me</h1>
             <p class="para-padding">
-                Recently, I graduated from Victoria University of Wellington with a degree in psychology and philosophy. This begs the question: why do I want to become a web developer? At university I took web development courses under the Commerce department, but despite getting top grades for my websites, I did not take a liking to the slow teaching pace of the technical side, and overemphasis on the commercial aspects of web technology. Thus, I decided to postpone my web dev education until I could switch my dedication from psychology and philosophy back to web development, after graduating.
+                Recently, I graduated from Victoria University of Wellington with a degree in psychology and philosophy. This begs the question:
+                why do I want to become a web developer? At university I took web development courses under the Commerce
+                department, but despite getting top grades for my websites, I did not take a liking to the slow teaching
+                pace of the technical side, and overemphasis on the commercial aspects of web technology. Thus, I decided
+                to postpone my web dev education until I could switch my dedication from psychology and philosophy back to
+                web development, after graduating.
                 <br>
-                <br>
-                As soon as I had graduated university, putting 100% into my final year, I began to self-teach JavaScript, HTML, CSS and others, picking up where I had left off a few years prior. At this stage, some of the technologies I am familiar with include:
+                <br> As soon as I had graduated university, putting 100% into my final year, I began to self-teach JavaScript,
+                HTML, CSS and others, picking up where I had left off a few years prior. At this stage, some of the technologies
+                I am familiar with include:
             </p>
             <div id="timeline">
                 <div class="tech-logo python" :class="{selected: selectedTech === 'python'}" v-on:mouseover="selectedTech = 'python' ">
@@ -91,7 +97,8 @@
                             were not required. This reignited my passion for coding and allowed me to learn the primary principles
                             of coding before focussing on more complex paradigms and techniques.
                             <br>
-                            <br> While Python was enjoyable to use, my interest lay in being able to make web apps and web sites, which meant JavaScript was the next stepping stone.
+                            <br> While Python was enjoyable to use, my interest lay in being able to make web apps and web sites,
+                            which meant JavaScript was the next stepping stone.
                         </p>
                     </div>
                 </transition>
@@ -111,31 +118,43 @@
                 <transition name="fade">
                     <div v-if=" selectedTech === 'html' " class="info">
                         <p>
-                            As mentioned earlier, I was experienced in HTML from my university days, so little was needed to get me back up and running with HTML. But as time progresses, I have noticed subtle improvements in my use of HTML elements and the organization of my web apps.
+                            As mentioned earlier, I was experienced in HTML from my university days, so little was needed to get me back up and running
+                            with HTML. But as time progresses, I have noticed subtle improvements in my use of HTML elements
+                            and the organization of my web apps.
                         </p>
                     </div>
                 </transition>
                 <transition name="fade">
                     <div v-if=" selectedTech === 'css' " class="info">
                         <p>
-                            Like HTML, I was already familiar with CSS. I soon figured out that familiarity with CSS would not cut the mustard when projects become complex, and so my CSS skills have improved greatly, after properly utilizing the available tools like grid, flex box, animations etc., not to mention the frameworks like Bootstrap which do much of the heavy lifting. 
+                            Like HTML, I was already familiar with CSS. I soon figured out that familiarity with CSS would not cut the mustard when projects
+                            become complex, and so my CSS skills have improved greatly, after properly utilizing the available
+                            tools like grid, flex box, animations etc., not to mention the frameworks like Bootstrap which
+                            do much of the heavy lifting.
                         </p>
                     </div>
                 </transition>
                 <transition name="fade">
                     <div v-if=" selectedTech === 'node' " class="info">
                         <p>
-                            After I felt comfortable turning website concepts into functional and good-looking (but ultimately static) web pages, I felt the need to delve into NodeJS to enter the back-end world of web development. Before even learning the Node methods and API, I made sure to understand the protocols and structure of the web. I had/have a veritable fascination with the inner workings of http communication, and the way Node integrates C++ and JS to bring JS to the server-side. 
+                            After I felt comfortable turning website concepts into functional and good-looking (but ultimately static) web pages, I felt
+                            the need to delve into NodeJS to enter the back-end world of web development. Before even learning
+                            the Node methods and API, I made sure to understand the protocols and structure of the web. I
+                            had/have a veritable fascination with the inner workings of http communication, and the way Node
+                            integrates C++ and JS to bring JS to the server-side.
                         </p>
                     </div>
                 </transition>
                 <transition name="fade">
                     <div v-if=" selectedTech === 'electron' " class="info">
                         <p>
-                            Electron provided a way to build a desktop app with the languages, libraries and frameworks I had already learned. I jumped into Electron shortly after Node, as a way to practice using Node, and to make something that was not possible purely within a browser.
+                            Electron provided a way to build a desktop app with the languages, libraries and frameworks I had already learned. I jumped
+                            into Electron shortly after Node, as a way to practice using Node, and to make something that
+                            was not possible purely within a browser.
                             <br>
                             <sub>
-                                This is what allowed me to create <a href="#juke">juke</a>
+                                This is what allowed me to create
+                                <a href="#juke">juke</a>
                             </sub>
                         </p>
                     </div>
@@ -144,10 +163,11 @@
                     <div v-if=" selectedTech === 'vue' " class="info">
                         <p>
                             To bring my front-end skills to an acceptable level I needed to learn a Front-end JavaScript framework. After initially understanding
-                            the basics of React, I looked at Vue.js for comparison, and found Vue to be adequate for my needs. I learned Vue as I was creating <a href="#juke">juke</a>.
+                            the basics of React, I looked at Vue.js for comparison, and found Vue to be adequate for my needs.
+                            I learned Vue as I was creating
+                            <a href="#juke">juke</a>.
                             <br>
-                            <br> 
-                            While I am familiar with Vue, I will resume learning React, as I am aware of its benefits.
+                            <br> While I am familiar with Vue, I will resume learning React, as I am aware of its benefits.
                         </p>
                     </div>
                 </transition>
@@ -162,7 +182,9 @@
             </div>
             <div id="objectives">
                 <div>
-                    <h4>My current goals can be found <a href="https://github.com/sinclairnick/goals" target="_blank">here</a></h4>
+                    <h4>My current goals can be found
+                        <a href="https://github.com/sinclairnick/goals" target="_blank">here</a>
+                    </h4>
                 </div>
             </div>
         </div>
