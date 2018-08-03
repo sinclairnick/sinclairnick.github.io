@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Hind");
 @media (min-width: 1080px) {
   :root {
     --width: 400px;
@@ -235,6 +236,7 @@ html {
 p {
   line-height: 2rem;
   font-size: 1.3rem;
+  font-family: 'Hind', sans-serif;
 }
 
 i {
@@ -272,6 +274,31 @@ a:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#1E1E67), to(rgba(30, 30, 103, 0)));
   background: linear-gradient(#1E1E67, rgba(30, 30, 103, 0));
   padding-top: 90px;
+}
+
+#about #blurb {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1080px) {
+  #about #blurb {
+    margin: 0 250px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1079px) {
+  #about #blurb {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 719px) {
+  #about #blurb {
+    margin: 0 20px;
+  }
 }
 
 #about #timeline {

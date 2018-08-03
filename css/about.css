@@ -4,6 +4,31 @@
   padding-top: 90px;
 }
 
+#about #blurb {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1080px) {
+  #about #blurb {
+    margin: 0 250px;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1079px) {
+  #about #blurb {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 719px) {
+  #about #blurb {
+    margin: 0 20px;
+  }
+}
+
 #about #timeline {
   display: -ms-grid;
   display: grid;

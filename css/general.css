@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Hind");
 body {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   color: white;
@@ -10,6 +11,7 @@ html {
 p {
   line-height: 2rem;
   font-size: 1.3rem;
+  font-family: 'Hind', sans-serif;
 }
 
 i {
