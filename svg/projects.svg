@@ -1,0 +1,16 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.66 597.04">
+  <g data-name="Layer 1 copy">
+    <path d="M899.15 41.1v-.18A39.42 39.42 0 0 0 859.73 1.5H40.91A39.42 39.42 0 0 0 1.49 40.92v.18z" fill="#3a3a3a" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+    <rect x="181.36" y="9.75" width="518.13" height="21.45" rx="5.87" ry="5.87" fill="#bfbebe"/>
+    <circle cx="42.32" cy="19.92" r="7.3" fill="#e24b4b"/>
+    <circle cx="65.77" cy="20.44" r="7.3" fill="#e0e04c"/>
+    <circle cx="87.66" cy="20.44" r="7.3" fill="#5ae04c"/>
+    <path d="M899.15 41.1v515a39.41 39.41 0 0 1-39.41 39.42H40.91A39.42 39.42 0 0 1 1.49 556.1v-515z" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+  <g data-name="Layer 2">
+    <path fill="#3f3f3f" d="M60.11 156h355.66v38.45H60.11z"/>
+    <path fill="#626362" d="M60.11 210.47h177.83v19.22H60.11z"/>
+    <path fill="#afafaf" d="M60.11 272.95h810.14v25.57H60.11zM60.11 312.95h810.14v25.57H60.11zM60.11 352.95h810.14v25.57H60.11zM60.11 392.95h810.14v25.57H60.11zM60.11 432.95h810.14v25.57H60.11zM60.11 472.95h198.85v25.57H60.11z"/>
+  </g>
+</svg>
